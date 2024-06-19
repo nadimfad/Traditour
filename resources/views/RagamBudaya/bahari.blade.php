@@ -42,7 +42,7 @@
                                         <a href="{{ route('showbahari', $bahari->id_bahari) }}"
                                             class="btn btn-sm btn-outline-secondary">Detail</a>
                                     </div>
-                                    <small class="text-muted">Durasi Kunjungan</small>
+                                    <small class="text-muted">{{ $bahari->created_at->setTimezone('Asia/Jakarta')->format('d/m/Y H:i') }}</small>
                                 </div>
                             </div>
                         </div>

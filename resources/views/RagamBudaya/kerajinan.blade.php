@@ -41,8 +41,8 @@
                                     <div class="btn-group">
                                         <a href="{{ route('showkerajinan', $kerajinan->id_kerajinan_kreatif) }}"
                                             class="btn btn-sm btn-outline-secondary">Detail</a>
-                                    </div>
-                                    <small class="text-muted">Durasi Kunjungan</small>
+                                    <small class="text-muted">{{ $kerajinan->created_at->setTimezone('Asia/Jakarta')->format('d/m/Y H:i') }}</small>
+                                        </div>
                                 </div>
                             </div>
                         </div>

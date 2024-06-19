@@ -6,7 +6,7 @@
 
     <div class="card shadow mb-4">
         <div class="card-body">
-            @include('admin.nonbahari.form', ['action' => route('admin.nonbahari.store'), 'method' => 'POST', 'nonbahari' => new App\Models\Nonbahari])
+            @include('admin.nonbahari.form', ['action' => route('admin.nonbahari.store'), 'method' => 'POST', 'nonbahari' => new App\Models\NonBahari])
         </div>
     </div>
 </div>

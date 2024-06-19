@@ -100,7 +100,7 @@ Route::group(['middleware' => 'admin', 'prefix' => 'admin'], function () {
 
     Route::get('bahari', [AdminBahariController::class, 'index'])->name('admin.bahari.index');
     Route::post('bahari', [AdminBahariController::class, 'store'])->name('admin.bahari.store');
-    Route::get('admin/bahari/create', [AdminBahariController::class, 'create'])->name('admin.bahari.create');
+    Route::get('bahari/create', [AdminBahariController::class, 'create'])->name('admin.bahari.create');
     Route::delete('bahari/{id}', [AdminBahariController::class, 'destroy'])->name('admin.bahari.destroy');
     Route::get('bahari/{id}/edit', [AdminBahariController::class, 'edit'])->name('admin.bahari.edit');
     Route::put('bahari/{id}', [AdminBahariController::class, 'update'])->name('admin.bahari.update');
